@@ -1,0 +1,19 @@
+{
+  "name": "Monokle  EXMItalia Templates Plugin",
+  "author": "Daniele Scattaglia",
+  "version": "0.1.0",
+  "description": "Plugin specifici per EXMachina",
+  "license": "private",
+  "repository": "https://github.com/danielescattaglia/monokle-helm-app-template",
+  "monoklePlugin": {
+    "id": "io.kubeshop.monokle.plugins.default-templates",
+    "helpUrl": "https://github.com/danielescattaglia/monokle-helm-app-template",
+    "icon": "exmitalia_template.svg",
+    "modules": [
+      {
+        "type": "template",
+        "path": "argo-helm-application"
+      }
+    ]
+  }
+}
