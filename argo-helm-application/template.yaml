@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: [[ forms[0].name ]]
+  namespace: [[ forms[0].namespace ]]
+spec:
+  project: [[ forms[0].project ]]
+  source:
+    chart: [[ forms[0].chart ]]
+    repoURL: [[ forms[0].repoURL ]]
+    targetRevision: [[ forms[0].revision ]]
+    helm:
+      releaseName: [[ forms[0].releasename ]]
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: [[ forms[0].destinationnamespace ]]
+  syncPolicy:
+    automated:
+      prune: true
+    retry:
+      backoff:
+        duration: 10s
+        factor: 2
+        maxDuration: 3m0s
+      limit: 10
+    syncOptions:
+      - PruneLast=true
+      - CreateNamespace=true

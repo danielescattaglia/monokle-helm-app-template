@@ -1,0 +1,36 @@
+{
+  "name": {
+    "ui:title": "Name",
+    "ui:help": "The name of the Application in ArgoCD"
+  },
+  "namespace": {
+    "ui:title": "Namespace",
+    "ui:help": "The target namespace for the application",
+    "ui:widget": "namespaceSelection"
+  },
+  "project": {
+    "ui:title": "Argo Project",
+    "ui:help": "The project the application belongs to in ArgoCD"
+  },
+  "repoURL": {
+    "ui:title": "Chart repository URL",
+    "ui:help": "The Helm repository url"
+  },
+  "revision": {
+    "ui:title": "Chart revision",
+    "ui:help": "The Helm chart revision"
+  },
+  "chart": {
+    "ui:title": "Chart name",
+    "ui:help": "The Helm chart name"
+  },
+  "releasename": {
+    "ui:title": "Chart release name",
+    "ui:help": "The Helm chart release name"
+  },
+  "destinationnamespace": {
+    "ui:title": "App destination namespace",
+    "ui:help": "The namespace where the application must be installed",
+    "ui:widget": "namespaceSelection"
+  }
+}

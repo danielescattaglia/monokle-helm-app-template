@@ -1,0 +1,25 @@
+{
+  "name": "Argo's Helm Application",
+  "id": "it.exmitalia.monokle.templates.default.argo-helm-app-template",
+  "author": "Daniele Scattaglia",
+  "version": "0.1.0",
+  "description": "Crea un'applicazione Argo che installa un app utilizzando Helm",
+  "repository": "",
+  "type": "vanilla",
+  "icon": "basic_job.svg",
+  "forms": [
+    {
+      "name": "Helm Settings",
+      "description": "Specify the settings for your Helm based Argo application",
+      "schema": "form-schema.json",
+      "uiSchema": "form-ui-schema.json"
+    }
+  ],
+  "manifests": [
+    {
+      "filePath": "template.yaml"
+    }
+  ],
+  "resultMessage": "Helm based Argo application resource created successfully!",
+  "helpUrl": "https://exmitalia.it"
+}

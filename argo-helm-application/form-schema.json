@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": ["name", "repoURL", "revision", "chart", "releasename", "destinationnamespace"],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string",
+      "default": "argocd"
+    },
+    "project": {
+      "type": "string",
+      "default": "default"
+    },
+    "repoURL": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "chart": {
+      "type": "string"
+    },
+    "releasename": {
+      "type": "string"
+    },
+    "destinationnamespace": {
+      "type": "string"
+    }
+  }
+}
