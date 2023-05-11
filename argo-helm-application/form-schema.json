@@ -29,7 +29,13 @@
       "type": "string"
     },
     "chartparameters": {
-      "type": "array"
+      "items": {
+        "type": "string"
+      },
+      "type": "array",
+      "default": [
+        ""
+      ]
     }
   }
 }
