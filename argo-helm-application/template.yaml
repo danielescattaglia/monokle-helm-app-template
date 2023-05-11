@@ -11,6 +11,7 @@ spec:
     targetRevision: [[ forms[0].revision ]]
     helm:
       releaseName: [[ forms[0].releasename ]]
+      parameters: 
   destination:
     server: "https://kubernetes.default.svc"
     namespace: [[ forms[0].destinationnamespace ]]

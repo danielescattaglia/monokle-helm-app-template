@@ -24,6 +24,10 @@
     "ui:title": "Chart name",
     "ui:help": "The Helm chart name"
   },
+  "chartparameters": {
+    "ui:title": "Chart parameters",
+    "ui:help": "The Helm chart params as set in values.yaml"
+  },
   "releasename": {
     "ui:title": "Chart release name",
     "ui:help": "The Helm chart release name"

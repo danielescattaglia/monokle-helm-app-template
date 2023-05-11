@@ -27,6 +27,9 @@
     },
     "destinationnamespace": {
       "type": "string"
+    },
+    "chartparameters": {
+      "type": "array"
     }
   }
 }
